@@ -36,7 +36,19 @@ public class Sketch extends PApplet {
   
   public void draw() {
 	  
-   
+    int hour = hour();
+    int minute = minute();
+    String clock = hour + ":" + minute;
+
+    fill(255,250,250);
+    rect(50, 50, 300, 100);
+
+    fill(0, 0, 0);
+    textSize(75);
+    text(clock, 100, 125);
+    
+    
+
 
     
 
